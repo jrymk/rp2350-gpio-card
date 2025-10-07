@@ -2,6 +2,9 @@
 Expansion Card circuit based on RP2350 for Framework mainboards providing GPIO to the computer. Circuit is based on [Expansion Card template](https://github.com/FrameworkComputer/ExpansionCards) and [RP2350A Minimal board](https://datasheets.raspberrypi.com/rp2350/hardware-design-with-rp2350.pdf). Designed in [KiCad](https://www.kicad.org/). It got produced and assembled. Its fully functional.
 
 ## Gallery
+* Real photo of card with TYPEC-950-ARP24 produced by NextPCB
+![RP2350 GPIO Card real](rp2350gpiocardreal.jpg)
+
 * Render of card with Molex 1054440011 (Framework template)
 ![RP2350 GPIO Card prototype render](rp2350gpiocard-front.png)
 ![RP2350 GPIO Card prototype render](rp2350gpiocard-back.png)
