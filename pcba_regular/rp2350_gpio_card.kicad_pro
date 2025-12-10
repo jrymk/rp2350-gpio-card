@@ -48,7 +48,7 @@
         "silk_text_thickness": 0.125,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.0
+          "min_clearance": 0.1524
         }
       },
       "diff_pair_dimensions": [
@@ -124,7 +124,7 @@
       },
       "rules": {
         "max_error": 0.005,
-        "min_clearance": 0.0,
+        "min_clearance": 0.1,
         "min_connection": 0.0,
         "min_copper_edge_clearance": 0.2,
         "min_groove_width": 0.0,
@@ -507,13 +507,13 @@
     "meta": {
       "version": 4
     },
-    "net_colors": null,
+    "net_colors": {
+      "+1V1": "rgb(255, 0, 255)",
+      "+3.3V": "rgb(255, 153, 0)",
+      "GND": "rgb(132, 132, 132)"
+    },
     "netclass_assignments": null,
     "netclass_patterns": [
-      {
-        "netclass": "Default",
-        "pattern": "/GND"
-      },
       {
         "netclass": "Default",
         "pattern": "GND"

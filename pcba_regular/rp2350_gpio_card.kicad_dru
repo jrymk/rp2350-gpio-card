@@ -25,10 +25,11 @@
 	(constraint track_width (min 0.127mm))
 )
 
+# HOW IS THIS 0.mm? "Pad to track clearance 0.1mm" on JLC Capabilities site
 (rule "Track spacing, outer layer (1oz copper)"
 	(layer outer)
 	(condition "A.Type == 'track' && B.Type == A.Type")
-	(constraint clearance (min 0.127mm))
+	(constraint clearance (min 0.10mm))
 )
 
 (rule "Track width, inner layer"
@@ -119,9 +120,10 @@
 )
 
 # TODO: try combining with rule "Clearance: PTH to track, different nets"
+# HOW IS THIS 0.2mm? "Pad to track clearance 0.1mm" on JLC Capabilities site
 (rule "Clearance: track to pad"
 	(condition "A.Type == 'pad' && B.Type == 'track' &&  A.Net != B.Net")
-	(constraint clearance (min 0.2mm))
+	(constraint clearance (min 0.1mm)) 
 )
 
 (rule "Clearance: pad/via to pad/via"
